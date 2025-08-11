@@ -8,6 +8,9 @@ export default defineConfig({
   // 커스텀 도메인 사용 시 base는 '/'로 설정
   base: '/',
   
+  // 데드 링크 무시 (개발 중)
+  ignoreDeadLinks: true,
+  
   themeConfig: {
     logo: '/logo.svg',
     
