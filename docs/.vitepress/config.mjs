@@ -5,8 +5,8 @@ export default defineConfig({
   description: '우리끼리 서비스 사용 가이드 문서',
   lang: 'ko-KR',
   
-  // GitHub Pages 배포를 위한 설정 (나중에 수정 가능)
-  base: '/uriggiri-guide/',
+  // 커스텀 도메인 사용 시 base는 '/'로 설정
+  base: '/',
   
   themeConfig: {
     logo: '/logo.svg',
@@ -16,7 +16,7 @@ export default defineConfig({
       { text: '홈', link: '/' },
       { text: '가이드', link: '/guide/getting-started' },
       { text: 'API 문서', link: '/api/' },
-      { text: 'GitHub', link: 'https://github.com/yourusername/uriggiri-guide' }
+      { text: 'GitHub', link: 'https://github.com/uriggiri/uriggiri-guide' }
     ],
     
     // 사이드바 설정
@@ -57,7 +57,7 @@ export default defineConfig({
     
     // 소셜 링크
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/yourusername/uriggiri-guide' }
+      { icon: 'github', link: 'https://github.com/uriggiri/uriggiri-guide' }
     ],
     
     // 검색 기능
@@ -68,7 +68,7 @@ export default defineConfig({
     // 푸터
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024 우리끼리'
+      copyright: 'Copyright © 2025 우리끼리'
     }
   }
 })
