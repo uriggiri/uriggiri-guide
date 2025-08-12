@@ -18,6 +18,7 @@ export default defineConfig({
     nav: [
       { text: '홈', link: '/' },
       { text: '가이드', link: '/guide/getting-started' },
+      { text: '무인 공간 솔루션', link: '/guide/unmanned-space/' },
       { text: 'API 문서', link: '/api/' },
       { text: 'GitHub', link: 'https://github.com/uriggiri/uriggiri-guide' }
     ],
@@ -54,6 +55,17 @@ export default defineConfig({
           { text: 'FAQ', link: '/guide/faq' },
           { text: '문제 해결 가이드', link: '/guide/troubleshooting' },
           { text: '문의하기', link: '/guide/contact' }
+        ]
+      },
+      {
+        text: '무인 공간 솔루션',
+        collapsed: false,
+        items: [
+          { text: '솔루션 개요', link: '/guide/unmanned-space/' },
+          { text: '출입통제 시스템', link: '/guide/unmanned-space/access-control' },
+          { text: '전기/전열 제어', link: '/guide/unmanned-space/electrical-control' },
+          { text: '보안 시스템', link: '/guide/unmanned-space/security-system' },
+          { text: '방송/알림 시스템', link: '/guide/unmanned-space/broadcast-notification' }
         ]
       }
     ],
