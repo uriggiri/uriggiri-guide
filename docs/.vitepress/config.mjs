@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: '우리끼리 가이드',
+  title: '우리끼리 시스템',
   description: '우리끼리 서비스 사용 가이드 문서',
   lang: 'ko-KR',
   
@@ -23,52 +23,87 @@ export default defineConfig({
       { text: 'GitHub', link: 'https://github.com/uriggiri/uriggiri-guide' }
     ],
     
-    // 사이드바 설정
-    sidebar: [
-      {
-        text: '시작하기',
-        items: [
-          { text: '소개', link: '/guide/introduction' },
-          { text: '빠른 시작', link: '/guide/getting-started' },
-          { text: '설치 가이드', link: '/guide/installation' }
-        ]
-      },
-      {
-        text: '기본 사용법',
-        items: [
-          { text: '회원가입 및 로그인', link: '/guide/auth' },
-          { text: '프로필 설정', link: '/guide/profile' },
-          { text: '기본 기능', link: '/guide/basic-features' }
-        ]
-      },
-      {
-        text: '고급 기능',
-        items: [
-          { text: '그룹 관리', link: '/guide/groups' },
-          { text: '권한 설정', link: '/guide/permissions' },
-          { text: '알림 설정', link: '/guide/notifications' }
-        ]
-      },
-      {
-        text: '문제 해결',
-        items: [
-          { text: 'FAQ', link: '/guide/faq' },
-          { text: '문제 해결 가이드', link: '/guide/troubleshooting' },
-          { text: '문의하기', link: '/guide/contact' }
-        ]
-      },
-      {
-        text: '무인 공간 솔루션',
-        collapsed: false,
-        items: [
-          { text: '솔루션 개요', link: '/guide/unmanned-space/' },
-          { text: '출입통제 시스템', link: '/guide/unmanned-space/access-control' },
-          { text: '전기/전열 제어', link: '/guide/unmanned-space/electrical-control' },
-          { text: '보안 시스템', link: '/guide/unmanned-space/security-system' },
-          { text: '방송/알림 시스템', link: '/guide/unmanned-space/broadcast-notification' }
-        ]
-      }
-    ],
+    // 사이드바 설정 - 경로별로 다른 사이드바 표시
+    sidebar: {
+      // 홈 및 일반 가이드 섹션
+      '/guide/': [
+        {
+          text: '시작하기',
+          items: [
+            { text: '소개', link: '/guide/introduction' },
+            { text: '빠른 시작', link: '/guide/getting-started' },
+            { text: '설치 가이드', link: '/guide/installation' },
+            { text: 'Canvas 예제', link: '/guide/canvas-example' }
+          ]
+        },
+        {
+          text: '기본 사용법',
+          items: [
+            { text: '회원가입 및 로그인', link: '/guide/auth' },
+            { text: '프로필 설정', link: '/guide/profile' },
+            { text: '기본 기능', link: '/guide/basic-features' }
+          ]
+        },
+        {
+          text: '고급 기능',
+          items: [
+            { text: '그룹 관리', link: '/guide/groups' },
+            { text: '권한 설정', link: '/guide/permissions' },
+            { text: '알림 설정', link: '/guide/notifications' }
+          ]
+        },
+        {
+          text: '문제 해결',
+          items: [
+            { text: 'FAQ', link: '/guide/faq' },
+            { text: '문제 해결 가이드', link: '/guide/troubleshooting' },
+            { text: '문의하기', link: '/guide/contact' }
+          ]
+        }
+      ],
+      
+      // 대시보드 섹션
+      '/guide/dashboard/': [
+        {
+          text: '대시보드',
+          items: [
+            { text: '솔루션 개요', link: '/guide/dashboard/' },
+            { text: '출입통제 시스템', link: '/guide/dashboard/access-control' },
+            { text: '전기/전열 제어', link: '/guide/dashboard/electrical-control' },
+            { text: '보안 시스템', link: '/guide/dashboard/security-system' },
+            { text: '방송/알림 시스템', link: '/guide/dashboard/broadcast-notification' }
+          ]
+        },
+        {
+          text: '빠른 링크',
+          items: [
+            { text: '← 메인 가이드로', link: '/guide/getting-started' },
+            { text: '무인 공간 솔루션 →', link: '/guide/unmanned-space/' }
+          ]
+        }
+      ],
+      
+      // 무인 공간 솔루션 섹션
+      '/guide/unmanned-space/': [
+        {
+          text: '무인 공간 솔루션',
+          items: [
+            { text: '솔루션 개요', link: '/guide/unmanned-space/' },
+            { text: '출입통제 시스템', link: '/guide/unmanned-space/access-control' },
+            { text: '전기/전열 제어', link: '/guide/unmanned-space/electrical-control' },
+            { text: '보안 시스템', link: '/guide/unmanned-space/security-system' },
+            { text: '방송/알림 시스템', link: '/guide/unmanned-space/broadcast-notification' }
+          ]
+        },
+        {
+          text: '빠른 링크',
+          items: [
+            { text: '← 메인 가이드로', link: '/guide/getting-started' },
+            { text: '대시보드 →', link: '/guide/dashboard/' }
+          ]
+        }
+      ]
+    },
     
     // 소셜 링크
     socialLinks: [

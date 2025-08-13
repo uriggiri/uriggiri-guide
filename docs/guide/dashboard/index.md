@@ -1,4 +1,4 @@
-# 무인 공간 솔루션
+# 대시보드
 
 ## 개요
 
@@ -100,7 +100,9 @@ graph TB
 
 ## 기술 지원
 
-- **기술 문의**: uriggiridev@gmail.com
+- **기술 문의**: tech@uriggiri.com
+- **영업 문의**: sales@uriggiri.com
+- **고객 지원**: 1588-0000
 
 ::: tip 데모 체험
 무인 공간 솔루션을 직접 체험해보고 싶으신가요? [데모 신청하기](https://demo.uriggiri.com)
