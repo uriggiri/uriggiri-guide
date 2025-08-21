@@ -4,6 +4,26 @@
 
 무인 공간 솔루션은 사무실, 매장, 공유 공간 등을 원격으로 관리하고 자동화할 수 있는 통합 관리 시스템입니다. 출입통제, 전기/전열 제어, 보안 시스템을 하나의 플랫폼에서 관리할 수 있습니다.
 
+## 핵심 서비스 접속 정보
+
+### 🏠 Home Assistant (HA)
+- **URL**: https://uriggirihub.kr/lovelace/uri01
+- **ID**: uriggiri
+- **설명**: 스마트 기기 통합 제어 및 자동화 플랫폼
+
+### 📺 Xibo 디지털 사이니지
+- **URL**: https://xibo.uriggirihub.kr
+- **ID**: uriggiri
+- **설명**: 디지털 사이니지 콘텐츠 관리 시스템
+
+### 🏢 월패드 시스템
+- **URL**: https://muin-space-s.vercel.app/
+- **설명**: 무인 공간 통합 관리 인터페이스
+
+### 📋 상세 접속 정보
+- **문서**: https://flow.team/l/1QAKe
+- 각 서비스별 상세한 접속 방법 및 비밀번호는 위 문서를 참조하세요.
+
 ## 주요 기능
 
 ### 🚪 [출입통제 시스템](./access-control)
