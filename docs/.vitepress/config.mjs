@@ -17,7 +17,7 @@ export default defineConfig({
     // 네비게이션 메뉴
     nav: [
       { text: '홈', link: '/' },
-      { text: '가이드', link: '/guide/getting-started' },
+      { text: '대시보드', link: '/guide/getting-started' },
       { text: '무인 공간 솔루션', link: '/guide/unmanned-space/' },
       { text: 'API 문서', link: '/api/' },
       { text: 'GitHub', link: 'https://github.com/uriggiri/uriggiri-guide' }
@@ -30,10 +30,8 @@ export default defineConfig({
         {
           text: '시작하기',
           items: [
-            { text: '소개', link: '/guide/introduction' },
-            { text: '빠른 시작', link: '/guide/getting-started' },
-            { text: '설치 가이드', link: '/guide/installation' },
-            { text: 'Canvas 예제', link: '/guide/canvas-example' }
+            { text: '로그인', link: '/guide/getting-started' },
+            { text: '대시보드 구조', link: '/guide/structure' }
           ]
         },
         {

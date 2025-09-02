@@ -4,14 +4,11 @@ layout: home
 hero:
   name: "우리끼리 시스템"
   text: "서비스 사용 가이드"
-  tagline: 우리끼리 서비스를 쉽고 빠르게 시작하세요
+  tagline: (주)우리끼리 시스템개발 관련문서
   actions:
     - theme: brand
       text: 시작하기
       link: /guide/getting-started
-    - theme: alt
-      text: GitHub
-      link: https://github.com/yourusername/uriggiri-guide
 
 features:
   - title: 쉬운 시작
