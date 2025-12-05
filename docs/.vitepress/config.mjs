@@ -87,7 +87,8 @@ export default defineConfig({
         {
           text: '무인 공간 관리',
           items: [
-            { text: '대시보드 가이드', link: '/guide/muinspace-control/' }
+            { text: '대시보드 가이드', link: '/guide/muinspace-control/' },
+            { text: '설정 가이드', link: '/guide/muinspace-control/settings' }
           ]
         },
         {
