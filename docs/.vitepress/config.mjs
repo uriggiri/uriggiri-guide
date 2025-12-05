@@ -19,6 +19,7 @@ export default defineConfig({
       { text: '홈', link: '/' },
       { text: '대시보드', link: '/guide/getting-started' },
       { text: '무인 공간 솔루션', link: '/guide/unmanned-space/' },
+      { text: '무인 공간 관리', link: '/guide/muinspace-control/' },
       { text: 'API 문서', link: '/api/' },
       { text: 'GitHub', link: 'https://github.com/uriggiri/uriggiri-guide' }
     ],
@@ -81,6 +82,23 @@ export default defineConfig({
         }
       ],
       
+      // 무인 공간 관리 섹션
+      '/guide/muinspace-control/': [
+        {
+          text: '무인 공간 관리',
+          items: [
+            { text: '대시보드 가이드', link: '/guide/muinspace-control/' }
+          ]
+        },
+        {
+          text: '빠른 링크',
+          items: [
+            { text: '← 메인 가이드로', link: '/guide/getting-started' },
+            { text: '무인 공간 솔루션 →', link: '/guide/unmanned-space/' }
+          ]
+        }
+      ],
+
       // 무인 공간 솔루션 섹션
       '/guide/unmanned-space/': [
         {
