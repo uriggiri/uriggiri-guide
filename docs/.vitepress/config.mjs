@@ -20,12 +20,44 @@ export default defineConfig({
       { text: '대시보드', link: '/guide/getting-started' },
       { text: '무인 공간 솔루션', link: '/guide/unmanned-space/' },
       { text: '무인 공간 관리', link: '/guide/muinspace-control/' },
+      { text: '반오토', link: '/banauto/' },
       { text: 'API 문서', link: '/api/' },
       { text: 'GitHub', link: 'https://github.com/uriggiri/uriggiri-guide' }
     ],
     
     // 사이드바 설정 - 경로별로 다른 사이드바 표시
     sidebar: {
+      // 반오토 (무인매장 위탁관리)
+      '/banauto/': [
+        {
+          text: '반오토',
+          items: [
+            { text: '개요', link: '/banauto/' },
+            { text: '디자인 시스템', link: '/banauto/design-system' }
+          ]
+        },
+        {
+          text: '통합관리',
+          items: [
+            { text: '개요 · 공통 규칙', link: '/banauto/admin/' },
+            { text: '통합 대시보드', link: '/banauto/admin/dashboard' },
+            { text: '출퇴근 관리', link: '/banauto/admin/attendance' },
+            { text: '재고 관리', link: '/banauto/admin/expiry' },
+            { text: '발주·정산 관리', link: '/banauto/admin/purchases' },
+            { text: '게시판', link: '/banauto/admin/board' },
+            { text: '매장 현황', link: '/banauto/admin/stores' },
+            { text: '조직관리', link: '/banauto/admin/org' },
+            { text: '환경설정', link: '/banauto/admin/settings' }
+          ]
+        },
+        {
+          text: '개발팀',
+          items: [
+            { text: '운영 노트', link: '/banauto/ops' }
+          ]
+        }
+      ],
+
       // 홈 및 일반 가이드 섹션
       '/guide/': [
         {
