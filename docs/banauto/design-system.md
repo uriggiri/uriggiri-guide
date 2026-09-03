@@ -14,9 +14,10 @@ aside: false
 스크린샷이 아니라 실제 코드가 그리는 화면이라, 규격을 고치면 이 문서도 함께 바뀝니다.
 값이 헷갈리면 문서의 표보다 **이 화면이 먼저**입니다.
 
-<!-- 글 칸(688px)보다 넓게 빼낸다. 넓은 화면에서는 양옆으로 나가고,
-     좁은 화면에서는 min() 이 글 칸 폭을 골라 그대로 들어맞는다 -->
-<div style="width:min(1160px, calc(100vw - 64px));margin:20px 0 20px calc((100% - min(1160px, calc(100vw - 64px))) / 2);border:1px solid var(--vp-c-divider);border-radius:12px;overflow:hidden;background:#F5F6FA">
+<!-- 폭은 본문 글 칸과 같게 둔다. 오른쪽 목차를 접어(aside:false) 글 칸이
+     1030 남짓이라 갤러리가 접히지 않는다 — 혼자 밖으로 튀어나가면 그 줄에서
+     페이지의 기준선이 끊긴다 -->
+<div style="margin:20px 0;border:1px solid var(--vp-c-divider);border-radius:12px;overflow:hidden;background:#F5F6FA">
   <iframe
     src="https://app.bahnauto.kr/design-system"
     title="반오토 디자인 시스템 (실제 화면)"
