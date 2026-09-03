@@ -73,7 +73,8 @@ export default defineConfig({
             { text: '게시판', link: '/banauto/admin/board' },
             { text: '매장 현황', link: '/banauto/admin/stores' },
             { text: '조직관리', link: '/banauto/admin/org' },
-            { text: '환경설정', link: '/banauto/admin/settings' }
+            { text: '환경설정', link: '/banauto/admin/settings' },
+            { text: '무료 트라이얼', link: '/banauto/admin/trial' }
           ]
         },
         {

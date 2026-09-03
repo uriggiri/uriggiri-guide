@@ -93,3 +93,11 @@ description: 반오토를 만들고 고칠 때 팀이 알고 있어야 하는 �
 - 필터는 숨기는 칸이 아니라 찾는 칸이다
 - 색은 아껴 쓴다. 다 칠하면 정작 위험한 것이 묻힌다
 - 아이콘만 있는 버튼은 만들지 않는다
+
+## 알림톡·문자 · 무료 트라이얼
+
+- **키는 코드에 없다.** 운영값은 환경설정 > 알림톡 설정(`org_messaging_settings`), 폴백은 서버 환경변수. 비밀키는 AES-256-GCM 으로 잠가 저장하고, 잠금 키는 `SETTINGS_ENCRYPTION_KEY`(없으면 `JWT_SECRET` 파생). **JWT_SECRET 을 바꾸면 저장된 비밀키가 풀리지 않는다** — 다시 입력해야 한다.
+- 발송 로그 `message_logs` 에는 번호를 가려서 남긴다(솔라피 콘솔에 원본이 있다). 인증번호는 해시만 저장(`phone_verifications`).
+- 크론: `trial/expire` 00:05 KST · `trial/notify-d3` 10:00 KST. `CRON_SECRET` 헤더 또는 HQ_ADMIN 토큰으로 수동 호출 가능.
+- 차단 판단은 `lib/trial-guard.ts` 하나 — 로그인 API 와 지점 목록 API 가 같이 쓴다. 날짜 계산은 `lib/trial.ts`(KST 문자열로만, 테스트 12개).
+- 가입 인증 남용 제한: 같은 번호 60초 1회 · 1시간 5회 · 5회 오답 잠금 · 코드 5분 · 인증 토큰 30분·일회용.
