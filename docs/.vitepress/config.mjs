@@ -21,12 +21,38 @@ export default defineConfig({
       { text: '무인 공간 솔루션', link: '/guide/unmanned-space/' },
       { text: '무인 공간 관리', link: '/guide/muinspace-control/' },
       { text: '반오토', link: '/banauto/' },
+      { text: '스탬프 이벤트', link: '/stamp/' },
       { text: 'API 문서', link: '/api/' },
       { text: 'GitHub', link: 'https://github.com/uriggiri/uriggiri-guide' }
     ],
     
     // 사이드바 설정 - 경로별로 다른 사이드바 표시
     sidebar: {
+      // 스탬프 이벤트 (고객 리텐션 프로그램)
+      '/stamp/': [
+        {
+          text: '스탬프 이벤트',
+          items: [
+            { text: '개요', link: '/stamp/' },
+            { text: '고객 화면', link: '/stamp/customer' },
+            { text: '관리자 화면', link: '/stamp/admin' }
+          ]
+        },
+        {
+          text: '운영',
+          items: [
+            { text: '알림톡', link: '/stamp/alrimtalk' },
+            { text: '자동화 스케줄', link: '/stamp/cron' }
+          ]
+        },
+        {
+          text: '개발팀',
+          items: [
+            { text: '운영 노트', link: '/stamp/ops' }
+          ]
+        }
+      ],
+
       // 반오토 (무인매장 위탁관리)
       '/banauto/': [
         {
