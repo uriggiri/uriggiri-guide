@@ -73,6 +73,7 @@ export default defineConfig({
             { text: '게시판', link: '/banauto/admin/board' },
             { text: '매장 현황', link: '/banauto/admin/stores' },
             { text: '조직관리', link: '/banauto/admin/org' },
+            { text: '영업관리', link: '/banauto/admin/sales' },
             { text: '환경설정', link: '/banauto/admin/settings' },
             { text: '무료 트라이얼', link: '/banauto/admin/trial' }
           ]
@@ -80,7 +81,8 @@ export default defineConfig({
         {
           text: '개발팀',
           items: [
-            { text: '운영 노트', link: '/banauto/ops' }
+            { text: '운영 노트', link: '/banauto/ops' },
+            { text: '접수 API (홈페이지 → 영업관리)', link: '/banauto/api-leads' }
           ]
         }
       ],
